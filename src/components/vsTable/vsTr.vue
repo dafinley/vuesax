@@ -41,7 +41,8 @@ export default {
     colspan:0,
     expanded: false,
     maxHeight:'0px',
-    activeEdit: false
+    activeEdit: false,
+    expandInstance: null,
   }),
   computed:{
     styleExpand () {
@@ -77,7 +78,7 @@ export default {
     })
   },
   created() {
-    if(this.$slots.expand) this.$parent.hasExpadableData = true
+    if(this.$slots.expand) this.$parent.hasExpandableData = true
   },
   methods:{
     handleCheckbox() {
@@ -106,14 +107,16 @@ export default {
       if(this.expanded) {
         tr.parentNode.removeChild(tr.nextSibling)
         tr.classList.remove('tr-expandedx')
-        this.expanded = false
+        this.expanded = false;
+        this.expandInstance.$destroy();
+
       } else {
         tr.classList.add('tr-expandedx')
         let trx = Vue.extend(trExpand);
-        let instance = new trx({parent: this, propsData: {colspan: this.colspan}});
-        instance.$slots.default = this.$slots.expand;
-        instance.vm = instance.$mount();
-        var newTR = document.createElement('tr').appendChild(instance.vm.$el);
+        this.expandInstance = new trx({parent: this, propsData: {colspan: this.colspan}});
+        this.expandInstance.$slots.default = this.$slots.expand;
+        this.expandInstance.vm = expandInstance.$mount();
+        var newTR = document.createElement('tr').appendChild(this.expandInstance.vm.$el);
         this.insertAfter(tr, newTR)
         this.expanded = true
       }
