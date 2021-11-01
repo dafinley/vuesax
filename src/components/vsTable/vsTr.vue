@@ -115,7 +115,7 @@ export default {
         let trx = Vue.extend(trExpand);
         this.expandInstance = new trx({parent: this, propsData: {colspan: this.colspan}});
         this.expandInstance.$slots.default = this.$slots.expand;
-        this.expandInstance.vm = expandInstance.$mount();
+        this.expandInstance.vm = this.expandInstance.$mount();
         var newTR = document.createElement('tr').appendChild(this.expandInstance.vm.$el);
         this.insertAfter(tr, newTR)
         this.expanded = true

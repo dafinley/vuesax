@@ -14920,12 +14920,12 @@ var vsTh_component = normalizeComponent(
 )
 
 /* harmony default export */ var vsTh = (vsTh_component.exports);
-// CONCATENATED MODULE: /Users/douglasfinley/.nvm/versions/node/v12.22.7/lib/node_modules/@vue/cli-service-global/node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"5ccdf906-vue-loader-template"}!/Users/douglasfinley/.nvm/versions/node/v12.22.7/lib/node_modules/@vue/cli-service-global/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/Users/douglasfinley/.nvm/versions/node/v12.22.7/lib/node_modules/@vue/cli-service-global/node_modules/cache-loader/dist/cjs.js??ref--1-0!/Users/douglasfinley/.nvm/versions/node/v12.22.7/lib/node_modules/@vue/cli-service-global/node_modules/vue-loader/lib??vue-loader-options!./src/components/vsTable/vsTr.vue?vue&type=template&id=42438642&
-var vsTrvue_type_template_id_42438642_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('tr',{ref:"tableTr",staticClass:"tr-values vs-table--tr",class:[("tr-table-state-" + _vm.state), {'is-selected':_vm.isSelected, 'selected': _vm.data, 'is-expand': _vm.maxHeight != '0px', 'activeEdit': _vm.activeEdit, 'hoverFlat': _vm.$parent.hoverFlat}],on:{"dblclick":_vm.dblclicktr,"click":_vm.clicktr}},[(_vm.$parent.multiple || _vm.$slots.expand)?_c('td',{staticClass:"td-check",class:{'active-expanded': _vm.expanded}},[(_vm.$parent.multiple)?_c('vs-checkbox',{attrs:{"checked":_vm.isSelected,"size":"small"},on:{"change":_vm.handleCheckbox}}):_vm._e(),(_vm.$slots.expand)?_c('vs-icon',[_vm._v("keyboard_arrow_down")]):_vm._e()],1):_vm._e(),_vm._t("default")],2)}
-var vsTrvue_type_template_id_42438642_staticRenderFns = []
+// CONCATENATED MODULE: /Users/douglasfinley/.nvm/versions/node/v12.22.7/lib/node_modules/@vue/cli-service-global/node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"5ccdf906-vue-loader-template"}!/Users/douglasfinley/.nvm/versions/node/v12.22.7/lib/node_modules/@vue/cli-service-global/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/Users/douglasfinley/.nvm/versions/node/v12.22.7/lib/node_modules/@vue/cli-service-global/node_modules/cache-loader/dist/cjs.js??ref--1-0!/Users/douglasfinley/.nvm/versions/node/v12.22.7/lib/node_modules/@vue/cli-service-global/node_modules/vue-loader/lib??vue-loader-options!./src/components/vsTable/vsTr.vue?vue&type=template&id=4a67fe6b&
+var vsTrvue_type_template_id_4a67fe6b_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('tr',{ref:"tableTr",staticClass:"tr-values vs-table--tr",class:[("tr-table-state-" + _vm.state), {'is-selected':_vm.isSelected, 'selected': _vm.data, 'is-expand': _vm.maxHeight != '0px', 'activeEdit': _vm.activeEdit, 'hoverFlat': _vm.$parent.hoverFlat}],on:{"dblclick":_vm.dblclicktr,"click":_vm.clicktr}},[(_vm.$parent.multiple || _vm.$slots.expand)?_c('td',{staticClass:"td-check",class:{'active-expanded': _vm.expanded}},[(_vm.$parent.multiple)?_c('vs-checkbox',{attrs:{"checked":_vm.isSelected,"size":"small"},on:{"change":_vm.handleCheckbox}}):_vm._e(),(_vm.$slots.expand)?_c('vs-icon',[_vm._v("keyboard_arrow_down")]):_vm._e()],1):_vm._e(),_vm._t("default")],2)}
+var vsTrvue_type_template_id_4a67fe6b_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/vsTable/vsTr.vue?vue&type=template&id=42438642&
+// CONCATENATED MODULE: ./src/components/vsTable/vsTr.vue?vue&type=template&id=4a67fe6b&
 
 // EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
@@ -15141,7 +15141,7 @@ var vsTrExpand_component = normalizeComponent(
           }
         });
         this.expandInstance.$slots.default = this.$slots.expand;
-        this.expandInstance.vm = expandInstance.$mount();
+        this.expandInstance.vm = this.expandInstance.$mount();
         var newTR = document.createElement('tr').appendChild(this.expandInstance.vm.$el);
         this.insertAfter(tr, newTR);
         this.expanded = true;
@@ -15169,8 +15169,8 @@ var vsTrExpand_component = normalizeComponent(
 
 var vsTr_component = normalizeComponent(
   vsTable_vsTrvue_type_script_lang_js_,
-  vsTrvue_type_template_id_42438642_render,
-  vsTrvue_type_template_id_42438642_staticRenderFns,
+  vsTrvue_type_template_id_4a67fe6b_render,
+  vsTrvue_type_template_id_4a67fe6b_staticRenderFns,
   false,
   null,
   null,
